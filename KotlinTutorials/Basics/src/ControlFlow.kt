@@ -4,7 +4,17 @@
  *
  */
 fun main(args: Array<String>) {
-
+    for (i in 1..3) {  // [1, 3]
+        println(i)
+    }
+    println("----------")
+    for (i in 3 downTo 1) {  // [3, 1]
+        println(i)
+    }
+    println("----------")
+    for (i in 1 until 3) {  // [1, 3) not contain 3
+        println(i)
+    }
 }
 
 /**
