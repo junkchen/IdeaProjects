@@ -3,7 +3,8 @@
  * label: ef:  return label@
  */
 fun main(args: Array<String>) {
-    foo()
+//    foo()
+    returnTest()
 }
 
 fun foo() {
@@ -35,4 +36,15 @@ fun foo() {
         }
         print(" done with nested loop")
     }
+}
+
+fun returnTest() {
+    var str : String? = null
+//    str = "non null str"
+    println("start")
+    str?.let {
+        println(str)
+        return
+    }
+    println("end")
 }
